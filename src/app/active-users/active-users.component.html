@@ -1,0 +1,5 @@
+<div *ngFor="let user of users">
+  <span>{{user.name}} </span>
+  <span>{{user.status}}</span>
+  <button (click)="setUnactive(user)">Set unactive</button><br><br>
+</div>

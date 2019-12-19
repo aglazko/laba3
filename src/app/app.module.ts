@@ -1,14 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
+import { ActiveUsersComponent } from './active-users/active-users.component';
+import { UnactiveUsersComponent } from './unactive-users/unactive-users.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ActiveUsersComponent,
+    UnactiveUsersComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
