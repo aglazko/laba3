@@ -1,0 +1,9 @@
+<span>Active to unactive:{{ a_to_u }}</span><br><br>
+<span>Unactive to active: {{ u_to_a }}</span><br><br>
+<input type="text" [(ngModel)]="name"><br><br>
+<select [(ngModel)]="status">
+  <option *ngFor="let s of statuses" [ngValue]="s">{{ s }}</option>
+</select><br><br>
+<button (click)="addUser()">Add user</button><br><br>
+<app-active-users></app-active-users><br>
+<app-unactive-users></app-unactive-users><br>
